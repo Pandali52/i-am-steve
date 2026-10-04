@@ -1254,7 +1254,7 @@
                     for(var c=0; c<multiPurposeChairs.length; c++) {
                         var chair = multiPurposeChairs[c];
                         if(Math.hypot(player.x - (chair.x + chair.w/2), player.y - (chair.y + chair.h/2)) < 45) {
-                            document.getElementById('modal-chair').style.display = 'flex';
+                            showGameMsg("Çok Amaçlı Salon", "son bir duyuru yapıldı ve gün bitti");
                             return;
                         }
                     }
